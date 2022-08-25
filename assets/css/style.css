@@ -24,14 +24,23 @@ section.nav .container .nav_links {
   gap: 0.5rem;
 }
 section.nav .container .nav_links a {
-  color: var(--white);
+  opacity: 0.8;
+  color: #fff;
   padding-inline: 2rem;
 }
 section.nav .container .nav_links a:hover {
-  color: var(--secondary-color);
+  opacity: 1;
+  color: #59bdff;
 }
 section.nav .container .btn {
   opacity: 1;
+  border: 1px solid white;
+  background-image: linear-gradient(55deg, rgba(7, 0, 133, 0) 0%, rgba(0, 132, 254, 0) 25%, rgb(7, 0, 133) 50%, rgba(0, 132, 254, 0) 75%, rgba(7, 0, 133, 0) 100%);
+}
+section.nav .container .btn:hover {
+  background-image: linear-gradient(55deg, rgb(7, 0, 133) 0%, rgb(0, 132, 254) 25%, rgb(7, 0, 133) 50%, rgb(0, 132, 254) 75%, rgb(7, 0, 133) 100%);
+  background-size: 500%;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 section.home {
@@ -57,15 +66,25 @@ section.home .container {
 section.home .container .bg_content {
   width: 50%;
   position: absolute;
-  top: 45%;
+  top: 48%;
   left: 0;
   transform: translateY(-50%);
 }
 section.home .container .bg_content h1 {
   color: white;
-  font-size: 6rem;
+  font-size: 7.2rem;
   line-height: 8rem;
   padding-bottom: 2rem;
+}
+section.home .container .bg_content h1 span.typewrite {
+  background: linear-gradient(920deg, #00d2ff 0%, #3a47d5 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 2rem;
+}
+section.home .container .bg_content h1 span.typewrite span {
+  border-right: 2px solid white;
 }
 section.home .container .bg_content p {
   color: white;
@@ -77,6 +96,80 @@ section.home .container .bg_content p {
 section.home .container .bg_content a.btn {
   margin-top: 1rem;
   font-size: 1.6rem;
+}
+section.home .container form {
+  position: absolute;
+  right: 0;
+  top: 48%;
+  transform: translateY(-50%);
+  min-height: 520px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.068);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid #59bdff;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+section.home .container form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+section.home .container form label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+section.home .container form input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+section.home .container form ::-moz-placeholder {
+  color: #e5e5e5;
+}
+section.home .container form :-ms-input-placeholder {
+  color: #e5e5e5;
+}
+section.home .container form ::placeholder {
+  color: #e5e5e5;
+}
+section.home .container form button {
+  margin-top: 50px;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.8rem;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.8;
+  background-image: linear-gradient(55deg, rgba(7, 0, 133, 0) 0%, rgba(0, 132, 254, 0) 25%, rgba(7, 0, 133, 0) 50%, rgba(0, 132, 254, 0) 75%, rgba(7, 0, 133, 0) 100%);
+  transition: all 0.5s ease-in-out;
+}
+section.home .container form button:hover {
+  background-image: linear-gradient(55deg, rgb(7, 0, 133) 0%, rgb(0, 132, 254) 25%, rgb(7, 0, 133) 50%, rgb(0, 132, 254) 75%, rgb(7, 0, 133) 100%);
+  background-size: 500%;
+  background-position: 40%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  opacity: 1;
+}
+section.home .container form button i {
+  margin-right: 1rem;
+}
+section.home .container form * {
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
 }
 
 section.work h1 {
