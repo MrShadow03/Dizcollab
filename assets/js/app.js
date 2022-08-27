@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
 	console.log(offset);
 });
 
-//text animation
+/* text animation with Jquery
 var TxtType = function(el, toRotate, period) {
 	this.toRotate = toRotate;
 	this.el = el;
@@ -63,3 +63,40 @@ window.onload = function() {
 	css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
 	document.body.appendChild(css);
 };
+*/
+
+var typed2 = new Typed('.typewrite', {
+    strings: ['','TRANSFORM','POPULARIZE','GROW'],
+    typeSpeed: 100,
+    backSpeed: 30,
+    loop: true
+  });
+
+  //swiper
+
+  const swiper = new Swiper('.swiper', {
+	speed: 400,
+	spaceBetween: 50,
+	autoplay: {
+		delay:1000,
+		stopOnLastSlide: false,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	},
+	loop: true,
+	loopFillGroupWithBlank: true,
+	slidesPerView: 3,
+  });
+
+  //vanilla-tilt
+
+//   VanillaTilt.init(document.querySelectorAll(".img-wrapper"), {
+// 	max: 10,
+// 	speed: 200,
+// 	reverse: true,
+// 	glare: true,
+// 	"max-glare": .5,
+// });
