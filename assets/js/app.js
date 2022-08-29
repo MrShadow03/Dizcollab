@@ -66,7 +66,7 @@ window.onload = function() {
 */
 
 var typed2 = new Typed('.typewrite', {
-    strings: ['','TRANSFORM','POPULARIZE','GROW'],
+    strings: ['','TRANSFORM','POPULARIZE','GROW','BOOST'],
     typeSpeed: 100,
     backSpeed: 30,
     loop: true
@@ -100,3 +100,92 @@ var typed2 = new Typed('.typewrite', {
 // 	glare: true,
 // 	"max-glare": .5,
 // });
+let expandButton = $('#expand-btn');
+let answerPara = $('#answer-para');
+
+expandButton.on('click', function(){
+
+   if(answerPara.attr('class') == 'custom-para answer invisible'){
+	  answerPara.removeClass('invisible');
+	  answerPara.addClass('visible');
+	  expandButton.html('<i class="fas fa-chevron-up"></i>');
+   }
+   else if(answerPara.attr('class') == 'custom-para answer visible'){
+	  answerPara.removeClass('visible');
+	  answerPara.addClass('invisible');
+	  expandButton.html('<i class="fas fa-chevron-down"></i>');
+   }
+   
+});
+
+let expandButton1 = $('#expand-btn1');
+let answerPara1 = $('#answer-para1');
+
+expandButton1.on('click', function(){
+
+   if(answerPara1.attr('class') == 'custom-para answer invisible'){
+	  answerPara1.removeClass('invisible');
+	  answerPara1.addClass('visible');
+	  expandButton1.html('<i class="fas fa-chevron-up"></i>');
+   }
+   else if(answerPara1.attr('class') == 'custom-para answer visible'){
+	  answerPara1.removeClass('visible');
+	  answerPara1.addClass('invisible');
+	  expandButton1.html('<i class="fas fa-chevron-down"></i>');
+   }
+   
+});
+
+let expandButton2 = $('#expand-btn2');
+let answerPara2 = $('#answer-para2');
+
+expandButton2.on('click', function(){
+
+   if(answerPara2.attr('class') == 'custom-para answer invisible'){
+	  answerPara2.removeClass('invisible');
+	  answerPara2.addClass('visible');
+	  expandButton2.html('<i class="fas fa-chevron-up"></i>');
+   }
+   else if(answerPara2.attr('class') == 'custom-para answer visible'){
+	  answerPara2.removeClass('visible');
+	  answerPara2.addClass('invisible');
+	  expandButton2.html('<i class="fas fa-chevron-down"></i>');
+   }
+   
+});
+
+let expandButton3 = $('#expand-btn3');
+let answerPara3 = $('#answer-para3');
+
+expandButton3.on('click', function(){
+
+   if(answerPara3.attr('class') == 'custom-para answer invisible'){
+	  answerPara3.removeClass('invisible');
+	  answerPara3.addClass('visible');
+	  expandButton3.html('<i class="fas fa-chevron-up"></i>');
+   }
+   else if(answerPara3.attr('class') == 'custom-para answer visible'){
+	  answerPara3.removeClass('visible');
+	  answerPara3.addClass('invisible');
+	  expandButton3.html('<i class="fas fa-chevron-down"></i>');
+   }
+   
+});
+
+let expandButton4 = $('#expand-btn4');
+let answerPara4 = $('#answer-para4');
+
+expandButton4.on('click', function(){
+
+   if(answerPara4.attr('class') == 'custom-para answer invisible'){
+	  answerPara4.removeClass('invisible');
+	  answerPara4.addClass('visible');
+	  expandButton4.html('<i class="fas fa-chevron-up"></i>');
+   }
+   else if(answerPara4.attr('class') == 'custom-para answer visible'){
+	  answerPara4.removeClass('visible');
+	  answerPara4.addClass('invisible');
+	  expandButton4.html('<i class="fas fa-chevron-down"></i>');
+   }
+   
+});

@@ -3,6 +3,10 @@
 	--secondary-color: rgba(0, 132, 254, 1);
 	--white: white;
 	--black: black;
+	--blue: #0088cc;
+    --button_gray: #403f3d;
+    --button_gray_hover: #313130;
+    --text_details_gray: #b7b7b7;
 }
 html {
 	font-size: 10px;
@@ -52,4 +56,53 @@ li {
 }
 .typed-cursor{
 	font-weight: 200;
+}
+.text_contact {
+    font-size: 1.68rem;
+    color: #1e1e1e;
+}
+.contact_icon {
+    color: var(--blue);
+    font-size: 2.2rem;
+}
+.para_xsm {
+    font-size: 1.1rem;
+    color: #fff;
+    opacity: 0.7;
+}
+.text_title_contact {
+    font-size: 2.38rem;
+    color: #fff;
+    font-weight: 300;
+}
+.para_xsm {
+    font-size: 1.1rem;
+    color: #fff;
+    opacity: 0.7;
+}
+.contact_ico {
+    color: #fff;
+    font-size: 2rem;
+}
+.submit {
+    border-radius: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #1e1e1e;
+    background-color: #1e1e1e;
+    font-weight: 700;
+    padding: 10px 30px;
+    font-size: 1.26rem;
+    transition: ease background 300ms;
+}
+.text_title {
+    font-size: 2.52rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: #1e1e1e;
+}
+.white{
+	color: #fff;
 }
