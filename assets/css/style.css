@@ -10,14 +10,14 @@ section.nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 70%;
 }
 section.nav .container .logo {
   display: flex;
   align-items: center;
 }
 section.nav .container .logo img {
-  height: 5rem;
+  height: 4rem;
 }
 section.nav .container .nav_links {
   display: flex;
@@ -362,10 +362,10 @@ section.faq .container {
 section.faq .container .faq-head {
   text-align: center;
   width: 80%;
-  margin: 0 auto 4rem;
+  margin: 0 auto 6rem;
 }
 section.faq .container .faq-head h1 {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 section.faq .container .questions {
   display: flex;
@@ -441,9 +441,11 @@ section.footer .container .footer-links a {
   font-size: 1.4rem;
   font-weight: 300;
   margin: 0 1.5rem;
+  opacity: 0.6;
 }
 section.footer .container .footer-links a:hover {
   text-decoration: underline;
+  opacity: 1;
 }
 section.footer .container .social-icons a {
   color: #fff;
@@ -740,6 +742,9 @@ section.footer .container > *:not(:first-child) {
   section.work .container .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
   }
+  section.gallery {
+    padding-bottom: 4rem;
+  }
   section.gallery .container {
     width: 90%;
   }
@@ -751,6 +756,10 @@ section.footer .container > *:not(:first-child) {
   }
   section.home2 .container form {
     width: 90%;
+  }
+  section.faq {
+    margin-bottom: 10rem;
+    padding-top: 5rem;
   }
   section.faq .container {
     width: 90%;
@@ -837,7 +846,7 @@ section.footer .container > *:not(:first-child) {
 }
 @media only screen and (max-width: 480px) {
   section.nav .container {
-    width: 99% !important;
+    width: 90% !important;
   }
   section.nav .container .nav_links {
     display: none;

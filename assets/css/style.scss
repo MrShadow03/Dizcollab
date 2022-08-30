@@ -19,14 +19,14 @@ section.nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 80%;
+		width: 70%;
 
 		.logo {
 			display: flex;
 			align-items: center;
 
 			img {
-				height: 5rem;
+				height: 4rem;
 			}
 		}
 
@@ -422,9 +422,9 @@ section.faq {
         .faq-head {
             text-align: center;
             width: 80%;
-            margin: 0 auto 4rem;
+            margin: 0 auto 6rem;
             h1 {
-                margin-bottom: 4rem;
+                margin-bottom: 1rem;
             }
         }
         .questions {
@@ -470,9 +470,11 @@ section.faq {
         }
     }
 }
+
 section.home2 {
 	display: none;
 }
+
 section.footer {
     padding: 5rem 0;
     background-color: #09142e;
@@ -498,8 +500,10 @@ section.footer {
             font-size: 1.4rem;
             font-weight: 300;
             margin: 0 1.5rem;
+			opacity: .6;
             &:hover {
                 text-decoration: underline;
+				opacity: 1;
             }
         }
         .social-icons a {
@@ -862,6 +866,7 @@ section.footer {
 	}
 	
 	section.gallery {
+		padding-bottom: 4rem;
 		.container{
 			width: 90%;
 			.img-gallery-wrapper{
@@ -881,6 +886,8 @@ section.footer {
 	}
 
 	section.faq {
+		margin-bottom: 10rem;
+		padding-top: 5rem;
 		.container {
 			width: 90%;
 		}
@@ -991,7 +998,7 @@ section.footer {
 
 @media only screen and (max-width: 480px) {
 	section.nav .container {
-		width: 99% !important;
+		width: 90% !important;
 	}
 
 	section.nav .container .nav_links {

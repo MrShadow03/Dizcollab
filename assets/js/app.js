@@ -1,10 +1,14 @@
 let home_section = document.querySelector("section.home");
+let viewport_width = window.innerWidth;
 
-window.addEventListener("scroll", function () {
-	let offset = window.scrollY * 0.5;
-	home_section.style.backgroundPositionY = offset + "px";
-	console.log(offset);
-});
+if(viewport_width > 768){
+	window.addEventListener("scroll", function () {
+		let offset = window.scrollY * 0.5;
+		home_section.style.backgroundPositionY = offset + "px";
+		console.log(offset);
+	});
+}
+
 
 /* text animation with Jquery
 var TxtType = function(el, toRotate, period) {
@@ -91,6 +95,25 @@ var typed2 = new Typed('.typewrite', {
 	slidesPerView: 3,
   });
 
+  if(viewport_width <= 576){
+	const swiper_sm = new Swiper('.swiper', {
+		speed: 400,
+		spaceBetween: 50,
+		autoplay: {
+			delay:1000,
+			stopOnLastSlide: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+		loop: true,
+		loopFillGroupWithBlank: true,
+		slidesPerView: 2,
+	  });
+  }
+
   //vanilla-tilt
 
 //   VanillaTilt.init(document.querySelectorAll(".img-wrapper"), {
@@ -102,8 +125,9 @@ var typed2 = new Typed('.typewrite', {
 // });
 let expandButton = $('#expand-btn');
 let answerPara = $('#answer-para');
+let question1 = $('#question-1');
 
-expandButton.on('click', function(){
+question1.on('click', function(){
 
    if(answerPara.attr('class') == 'custom-para answer invisible'){
 	  answerPara.removeClass('invisible');
@@ -120,8 +144,9 @@ expandButton.on('click', function(){
 
 let expandButton1 = $('#expand-btn1');
 let answerPara1 = $('#answer-para1');
+let question2 = $('#question-2');
 
-expandButton1.on('click', function(){
+question2.on('click', function(){
 
    if(answerPara1.attr('class') == 'custom-para answer invisible'){
 	  answerPara1.removeClass('invisible');
@@ -138,8 +163,9 @@ expandButton1.on('click', function(){
 
 let expandButton2 = $('#expand-btn2');
 let answerPara2 = $('#answer-para2');
+let question3 = $('#question-3');
 
-expandButton2.on('click', function(){
+question3.on('click', function(){
 
    if(answerPara2.attr('class') == 'custom-para answer invisible'){
 	  answerPara2.removeClass('invisible');
@@ -156,8 +182,9 @@ expandButton2.on('click', function(){
 
 let expandButton3 = $('#expand-btn3');
 let answerPara3 = $('#answer-para3');
+let question4 = $('#question-4');
 
-expandButton3.on('click', function(){
+question4.on('click', function(){
 
    if(answerPara3.attr('class') == 'custom-para answer invisible'){
 	  answerPara3.removeClass('invisible');
@@ -174,8 +201,9 @@ expandButton3.on('click', function(){
 
 let expandButton4 = $('#expand-btn4');
 let answerPara4 = $('#answer-para4');
+let question5 = $('#question-5');
 
-expandButton4.on('click', function(){
+question5.on('click', function(){
 
    if(answerPara4.attr('class') == 'custom-para answer invisible'){
 	  answerPara4.removeClass('invisible');
